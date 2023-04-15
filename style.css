@@ -59,7 +59,16 @@ main {
   justify-content: center;
   text-align: center;
 }
-.price {
+.price-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 34px;
+  gap: 10px;
+}
+
+.price-component p {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 800;
@@ -68,11 +77,6 @@ main {
   text-align: right;
   letter-spacing: -0.8px;
   color: #293356;
-}
-
-.price-component {
-  margin-top: 40px;
-  margin-bottom: 34px;
 }
 
 .billing-period {
@@ -152,9 +156,9 @@ input[type="range"]::-webkit-slider-thumb {
   transition: all 2 ease;
 }
 
-.toggle-slider:hover {
+/* .toggle-slider:hover {
   background-color: rgba(16, 216, 196, 1);
-}
+} */
 
 .toggle-slider::before {
   content: "";
@@ -166,9 +170,12 @@ input[type="range"]::-webkit-slider-thumb {
   left: 3px;
   top: 3px;
 }
+.switch input:checked + .toggle-slider {
+  background-color: rgba(16, 216, 196, 1);
+}
 
 .switch input:checked + .toggle-slider::before {
-  transform: translateX(25px);
+  transform: translateX(21px);
 }
 
 .views {
