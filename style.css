@@ -119,6 +119,7 @@ input[type="range"]::-webkit-slider-thumb {
   background-image: url("./images/icon-slider.svg");
   background-repeat: no-repeat;
   background-position: center;
+  /* cursor: pointer; */
 }
 
 .billing-period p {
@@ -163,6 +164,7 @@ input[type="range"]::-webkit-slider-thumb {
   right: 0;
   bottom: 0;
   transition: all 2 ease;
+  cursor: pointer;
 }
 
 /* .toggle-slider:hover {
@@ -251,4 +253,5 @@ input[type="range"]::-webkit-slider-thumb {
   color: #becdff;
   padding: 12px 36px;
   border: transparent;
+  cursor: pointer;
 }

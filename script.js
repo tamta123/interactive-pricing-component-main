@@ -11,6 +11,13 @@ let isYearly = false;
 slider.addEventListener('input',function(){
 updateValue();
 views.innerHTML = pageViews[slider.value]
+let value = this.value *25
+this.style.background= `linear-gradient(
+    to right,
+    hsla(174, 77%, 80%) 0%,
+    hsla(174, 77%, 80%) ${value}%,
+    hsla(225, 64%, 95%) ${(value+1)}%,
+    hsla(225, 64%, 95%) 100%)`
 })
 
 toggle.addEventListener('change', function(){
