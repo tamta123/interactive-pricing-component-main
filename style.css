@@ -59,6 +59,15 @@ main {
   justify-content: center;
   text-align: center;
 }
+
+.pageviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+  gap: 5px;
+}
+
 .price-component {
   display: flex;
   justify-content: center;
@@ -177,7 +186,7 @@ input[type="range"]::-webkit-slider-thumb {
 .switch input:checked + .toggle-slider::before {
   transform: translateX(21px);
 }
-
+.pageviews span,
 .views {
   font-family: "Manrope";
   font-style: normal;
@@ -188,7 +197,6 @@ input[type="range"]::-webkit-slider-thumb {
   letter-spacing: 1.71429px;
   text-transform: uppercase;
   color: #848ead;
-  margin-bottom: 41px;
 }
 .discount {
   background: #feede8;
