@@ -1,5 +1,6 @@
 let views = document.querySelector(".views");
 let cost = document.querySelector (".price");
+let costMob = document.querySelector('.price-mobile');
 let slider = document.getElementById ("vol");
 let toggle =  document.getElementById("billing");
 
@@ -31,7 +32,9 @@ if(isYearly == false){
 function updateValue(){
     if(isYearly){
         cost.innerHTML=(perMonth[slider.value]*.75).toFixed(2)
+        costMob.innerHTML = (perMonth[slider.value]*.75).toFixed(2)
     } else{
         cost.innerHTML=(perMonth[slider.value]).toFixed(2)
+        costMob.innerHTML=(perMonth[slider.value]).toFixed(2)
     }
 }
