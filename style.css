@@ -7,6 +7,7 @@ body {
   background: #ffffff;
   font-family: "Manrope";
   background-image: url("./images/bg-pattern.svg");
+  background-size: 100vw;
   background-repeat: no-repeat;
   position: relative;
 }
